@@ -4,7 +4,7 @@
 * Author
     * Xinyi Liu([xinyiliu621@163.com](mailto:xinyiliu621@163.com))
     * Renjie Li([rjli13@fudan.edu.cn](mailto:rjli13@fudan.edu.cn))
-    * ([](mailto:))
+    * Zeyuan Yu([17210240245@fudan.edu.cn](mailto:17210240245@fudan.edu.cn))
 * Last revised: July 12nd 13:30
 
 ## Empathize
