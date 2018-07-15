@@ -2,10 +2,10 @@
 
 * Title: Monitor of Teaching Building
 * Author
-    * Xinyi Liu([xinyiliu621@163.com](mailto:xinyiliu621@163.com))
-    * Renjie Li([rjli13@fudan.edu.cn](mailto:rjli13@fudan.edu.cn))
-    * Zeyuan Yu([17210240245@fudan.edu.cn](mailto:17210240245@fudan.edu.cn))
-* Last revised: July 12nd 13:30
+    * [Xinyi Liu](mailto:xinyiliu621@163.com)
+    * [Renjie Li](mailto:rjli13@fudan.edu.cn)
+    * [Zeyuan Yu](mailto:17210240245@fudan.edu.cn)
+* Last revised: July 15th
 
 ## Empathize
 
@@ -22,13 +22,9 @@
 ## Ideate
 
 * Scenario: The monitor system of teaching buildings on Campus
-
 * Possible solutions: Web services & APIs. We can also provide some methods to help the administrator to decide how many rooms.
-
 * Key involved stakeholders: The administrator of teaching building, students, some companies (e.g. ofo, because our platform can help them plan how to put bicycles)
-
 * Key metrics for evaluating: The feedback from the students/administrator.
-
 * Similar or related scenarios: 
 
 ## Prototype
@@ -36,15 +32,18 @@
 How you would do the prototype of your scenario?
 
 > Web Services.
+>
 > APIs.
 
 ## Test
 
 *How would you test and demonstrate the prototype of your scenario?*
 
-> 1.Give questionnaires to users,ask for their feedback.
-> 2.Use monitoring or send people to count the number specialty.
-> 3.Use code for performing automated testing.
+> 1.Giving questionnaires to users, and asking for their feedback.
+>
+> 2.Using monitors or send people to count the number of peoples in teaching buildings.
+>
+> 3.Programming for performing automated testing.
 
 ### References: list of references
 1. Y.-Q. Zhang, X. Li, J. Xu and A. V. Vasilakos, Human Interactive Patterns in Temporal Networks, IEEE Transcations on Systems, Man, and Cybernetics: Systems. vol. 45, pp.214-222, 2015

@@ -5,13 +5,13 @@
 * Number of bicycles
 
 ## source of data
-* Chian Meteorological Administration
+* China Meteorological Administration
 * Fudan Univeristy's Wi-Fi data
 * Shared bicycle companies[2]
 
 ## Quality of data
 * From the Wi-Fi data, we can get the latitude and longitude of each teaching buildings.
-* The unit of time in Wi-Fi dataset is minute(s), so we the data got from shared bicycle companies' API should also be minute data.
+* The unit of time in Wi-Fi dataset is minute(s), so the data we got from shared bicycle companies' API should also be minute data.
 * Weather data (daily).
 
 ## Data Usage
@@ -19,6 +19,7 @@
 
 ## Quality of Service
 * The Wi-Fi data have a high accuracy, as well as the GPS data of teaching buildings.
+* Q: if we lose some data (like the situation in the real world), how should we deal with the time series data?
 
 ## Context
 The URL for data source : http://www.cma.gov.cn/, https://can.fudan.edu.cn/data/fudanwifi09.
