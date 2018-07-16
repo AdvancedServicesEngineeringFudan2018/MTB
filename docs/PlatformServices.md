@@ -6,16 +6,16 @@
 
 ## Analytics
 * data visualization
-* machine learning methods to help simulate missing data
+* machine learning and other methods to predict:
+  * which rooms are suitable for students
+  * how many bikes the shared bicycles companies should put on the street near teaching buildings
 
 ## Data Services
 * APIs: for some shared bicycle companies, they can visit our APIs and get Wi-Fi and weather data and then they can decide put more bicycles around the teaching buildings or not.
 
 ## Notification
-~~TODO~~
-> "new results are available"
->
-> "new data sources are available"
+* web alert to students about which rooms are suitable for self-study.
+* send emails to shared bicycle companies (who subscribes) about the data updating.
 
 ## Human Services
 * for **shared bicycle companies**: APIs
@@ -23,9 +23,10 @@
 * for **building administrators**: how many rooms should be open to students
 
 ## Elasticity Management
-* TO BE CONTINUE...
+* Data Missing: machine learning or econometrics (*e.g.* time series) methods to stimulate them
+* API errors: *e.g.* if Baidu Map APIs are broken, we can use Amap APIs instead.
 
-## platform services in our scenario:
+# platform services in our scenario:
 
 ![P&S](architecture.png)
 
