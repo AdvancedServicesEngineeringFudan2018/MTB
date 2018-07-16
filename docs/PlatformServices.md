@@ -26,6 +26,11 @@
 * Data Missing: machine learning or econometrics (*e.g.* time series) methods to stimulate them
 * API errors: *e.g.* if Baidu Map APIs are broken, we can use Amap APIs instead.
 
+## Monitoring
+* Database: MongoDB has its own backup and monitoring method [here](https://docs.mongodb.com/manual/administration).
+* Server: AWS itself has a monitoring web service and show visiting data online.
+* Human Services: Each buildings have a unique administrator, and he or she can determine which rooms should be open to students.
+
 # platform services in our scenario:
 
 ![P&S](architecture.png)
