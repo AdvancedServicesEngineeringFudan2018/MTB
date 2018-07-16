@@ -23,11 +23,11 @@
 * for **building administrators**: how many rooms should be open to students
 
 ## Elasticity Management
-* APIs: return json data to programs
-* data visualization: return map and pictures with data for human users
 * TO BE CONTINUE...
 
 ## platform services in our scenario:
+
+![P&S](architecture.png)
 
 | Option | Technology/Framework
 | --------   | -----
