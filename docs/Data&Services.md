@@ -1,4 +1,4 @@
-# Platform & Services
+# QoS/QoD
 ## Data sources
 * sensors (weather data)
 * stream data platforms (APIs of shared bicycle companies)
@@ -31,7 +31,7 @@
 * Server: AWS itself has a monitoring web service and show visiting data online.
 * Human Services: Each buildings have a unique administrator, and he or she can determine which rooms should be open to students.
 
-# platform services in our scenario:
+# Platform & Services
 
 ![P&S](architecture.png)
 
