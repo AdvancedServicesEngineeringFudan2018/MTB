@@ -16,15 +16,23 @@
 <script type="text/javascript">
     // BaiDu API
     var map = new BMap.Map("allmap");
-    map.centerAndZoom(new BMap.Point(121.60447, 31.195857), 18);
-    var marker = new BMap.Marker(new BMap.Point(121.60447, 31.195857)); // create Marker
-    marker.addEventListener("click",attribute);
-    map.addOverlay(marker);    //增加点
+    var point = new BMap.Point(121.60447, 31.195857);
+    map.centerAndZoom(point, 18);
+    var marker = new BMap.Marker(point); // create Marker
 
-    function attribute(){
-        var p = marker.getPosition();  //get position of marker
-        alert("marker的位置是" + p.lng + "," + p.lat);
+    map.addOverlay(marker);    //add marker
+
+
+    var opts = {
+        width : 200,     // 信息窗口宽度
+        height: 100,     // 信息窗口高度
+        title : "Building Message" , // 信息窗口标题
+        enableMessage:true,//设置允许信息窗发送短息
     }
+    var infoWindow = new BMap.InfoWindow("Number of People:xxx;\nNumber of empty room:xxx;\nBikes demand:xxx", opts);  // 创建信息窗口对象
+    marker.addEventListener("click", function(){
+        map.openInfoWindow(infoWindow,point); //开启信息窗口
+    });
 </script>
 
 
