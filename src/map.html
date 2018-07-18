@@ -7,7 +7,7 @@
         #allmap{width:100%;height:100%;}
     </style>
     <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=CWZ0GuwuA81lUA8jpQrxPEomAjx61BGK"></script>
-    <title>地图单击事件</title>
+    <title>MTB</title>
 </head>
 <body>
 <div id="allmap"></div>
@@ -17,22 +17,66 @@
     // BaiDu API
     var map = new BMap.Map("allmap");
     var point = new BMap.Point(121.60447, 31.195857);
+
+    var bld1 = new BMap.Point(121.605283, 31.197162);
+    var bld2 = new BMap.Point(121.604367, 31.196915);
+    var bld3 = new BMap.Point(121.606298, 31.197347);
+    var bld4 = new BMap.Point(121.606325, 31.19676);
+    var bld5 = new BMap.Point(121.603486, 31.195857);
+
+
     map.centerAndZoom(point, 18);
-    var marker = new BMap.Marker(point); // create Marker
 
-    map.addOverlay(marker);    //add marker
+    var marker1 = new BMap.Marker(bld1); // create Marker1
+    var marker2 = new BMap.Marker(bld2); // create Marker2
+    var marker3 = new BMap.Marker(bld3);
+    var marker4 = new BMap.Marker(bld4);
+    var marker5 = new BMap.Marker(bld5);// create Marker3
 
+    map.addOverlay(marker1);    //add marker1
+    map.addOverlay(marker2);    //add marker2
+    map.addOverlay(marker3);     //add marker3
+    map.addOverlay(marker4);
+    map.addOverlay(marker5);
 
     var opts = {
-        width : 200,     // 信息窗口宽度
-        height: 100,     // 信息窗口高度
-        title : "Building Message" , // 信息窗口标题
-        enableMessage:true,//设置允许信息窗发送短息
+        width : 200,     // information window width
+        height: 150,     // information window height
+        title : "Building Message" , // information window title
+        enableMessage:true
     }
-    var infoWindow = new BMap.InfoWindow("Number of People:xxx;\nNumber of empty room:xxx;\nBikes demand:xxx", opts);  // 创建信息窗口对象
-    marker.addEventListener("click", function(){
-        map.openInfoWindow(infoWindow,point); //开启信息窗口
-    });
-</script>
+    var data = ['{"BuildNo":2,"People":1000,"Room":28,"Weather":"Sunny","Bikes":90}',
+        '{"BuildNo":3,"People":231,"Room":23,"Weather":"Sunny","Bikes":35}',
+        '{"BuildNo":4,"People":423,"Room":15,"Weather":"Sunny","Bikes":58}',
+        '{"BuildNo":5,"People":234,"Room":13,"Weather":"Sunny","Bikes":39}',
+        '{"BuildNo":6,"People":153,"Room":19,"Weather":"Sunny","Bikes":24}'];//data from the backend
 
+    infoWindow = [];
+    for (var i = 0;i < 5;i++)
+    {
+        var obj = JSON.parse(data[i]);
+
+        var Window = new BMap.InfoWindow("Number of People:"+obj.People+'\n'+
+            "Number of empty room:"+obj.Room+'\n'+
+            "Bikes demand:"+obj.Bikes, opts);  //create information window
+        infoWindow.push(Window);
+    }
+
+    marker1.addEventListener("click", function(){
+        map.openInfoWindow(infoWindow[0],bld1); //open information window
+    });
+    marker2.addEventListener("click", function(){
+        map.openInfoWindow(infoWindow[1],bld2); //open information window
+    });
+    marker3.addEventListener("click", function(){
+        map.openInfoWindow(infoWindow[2],bld3); //open information window
+    });
+    marker4.addEventListener("click", function(){
+        map.openInfoWindow(infoWindow[3],bld4); //open information window
+    });
+    marker5.addEventListener("click", function(){
+        map.openInfoWindow(infoWindow[4],bld5); //open information window
+    });
+
+</script>
 
